@@ -1,0 +1,79 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.icons{
+  background:none;
+  height:30px;
+  width:30px;
+  margin-left: 0%;
+}
+
+.navbar-header{
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: rgb(217, 217, 217);
+}
+
+.gsotImage {
+  position:fixed;
+  top: 0px;
+  right: 0px;
+  height:50px;
+}
+
+.title a{
+  text-decoration: none;
+  color: black;
+  font-size: 4em;
+  position:fixed;
+  top: 0px;
+  left: 12%;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 12%;
+    padding-left: 1px;
+    padding-right: 15px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(217, 217, 217);
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
+    padding-top: 100px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-weight: 200;
+  font-family: 'Open Sans';
+  font-size:auto;
+  display:block;
+    padding: 25px 8px 8px 10px;
+    color: #4d4d4d;
+    border-bottom:solid 1px grey;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #b30000;
+    font-weight: bold;
+}
+
+
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

@@ -1,23 +1,44 @@
-<nav class="navbar navbar-inverse">
-     <div class="container-fluid">
-       <div class="navbar-header">
-         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-           <span class="sr-only">Toggle navigation</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-         </button>
-         <a class="navbar-brand" href="#">Order Management</a>
-       </div>
-       <div id="navbar" class="navbar-collapse collapse">
-         <ul class="nav navbar-nav navbar-right">
-           <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/']">Dashboard</a></li>
-           <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/order/add']">Add New Order</a></li>
 
-         </ul>
-         <form class="navbar-form navbar-right">
-           <input type="text" class="form-control" placeholder="Search...">
-         </form>
-       </div>
-     </div>
-   </nav>
+<div class="navbar-header">
+</div>
+
+<nav>
+
+  <div class="title">
+    <a>Order Management</a>
+  </div>
+
+<div id="mySidenav" class="sidenav">
+
+  <div class="gsotImage">
+  <img src="../../assets/GSOT.jpg" alt="GSOT" style="width:200px;height:80px;">
+  </div>
+  <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+
+  <a [routerLink]="['dashboard']">
+    <img class="icons" src="../../assets/dashboard.png" alt="dashboard"> Dashboard
+  </a>
+  <a [routerLink]="['orders']">
+    <img class="icons" src="../../assets/shoppingcart.png" alt="shoppingcart">  Orders
+  </a>
+  <a [routerLink]="['shipment']">
+    <img class="icons" src="../../assets/shipment.png" alt="shipment"> Shipment
+  </a>
+  <a [routerLink]="['inventory']">
+    <img class="icons" src="../../assets/inventory.png" alt="inventory"> Inventory
+  </a>
+  <a [routerLink]="['channels']">
+    <img class="icons" src="../../assets/channels.png" alt="channels"> Channels
+  </a>
+  <a [routerLink]="['reports']">
+    <img class="icons" src="../../assets/reports.png" alt="reports"> Reports
+  </a>
+
+</div>
+
+<div id="main">
+  <h2></h2>
+  <p></p>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+</nav>
